@@ -1,0 +1,31 @@
+
+high level
+start with amon carter and pull in bio from smithsonian and get it for only the sameas people, because they have different URIs.
+
+first steps are 
+	modeling and publishing data for SAAM-LOD first
+
+
+Screen shots
+1. Model manager with all models of smithsonian
+2. Modelled amon carter data set.
+3. Go to person and suggest how to augment data.
+4. Augment with bio and show joined tables
+
+Text
+Between 2 and 3, describe linkage with LIMES.  Note why linking is outside the scope of the demo.
+
+Explain why this is cool
+Reasoning about R2RML triples maps to pick which POMs you can add.
+Optional - describe bloom filter generation
+
+Make sure we cover all the bases for the demo.
+Need related work.
+	Karma
+	RML 
+	R2RML
+
+Enables us do to exports and interactively interrogate data without forcing the user to write sparql
+
+Augmenting Data Using Sources Models
+Motivating example is scholar working with amon carter and I want to know what other data I have available.
