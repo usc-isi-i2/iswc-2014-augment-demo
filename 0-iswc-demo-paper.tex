@@ -3,8 +3,16 @@
 \usepackage{amssymb}
 \setcounter{tocdepth}{3}
 \usepackage{graphicx}
-
 \usepackage{url}
+\usepackage{color}
+\usepackage{xspace}
+
+\newcommand{\comment}[1]{\marginpar{\footnotesize\textcolor{red}{#1}}}
+%\definecolor{Orange}{rgb}{1,0.5,0}
+\newcommand{\todo}[1]{\textbf{\textcolor{red}{[[#1]]}}}
+
+\newcommand{\karma}{\textsc{Karma}\xspace}
+
 \urldef{\mailsa}\path|{knoblock, pszekely, slepicka}@isi.edu|
 \urldef{\mailsb}\path|{chengyey}@usc.edu|    
 \newcommand{\keywords}[1]{\par\addvspace\baselineskip
@@ -40,6 +48,15 @@ Information Sciences Institute and Department of Computer Science, USA\\
 
 
 \begin{abstract}
+%  1. The problem
+
+%  2. Why the problem is a problem (why it's an interesting problem [SPJ])
+
+%  3. Startling sentence (what your solution achieves [SPJ])
+
+%  4. Implication of startling sentence (what follows from your solution [SPJ])
+
+
 As users across the world transform legacy datasets in the form of relational databases and structured documents into RDF for the Linked Data Cloud, it can be difficult for them to understand how the data from one source relates to others'.
 Lacking such an understanding precludes users from making the most of the relationships they are capturing. 
 By building on our previously demonstrated ability to enable museum curators to semantically model their data about cultural artifacts, subjects and creators to generate RDF, we can exploit such models to allow curators to reason about how other models might integrate with their data.  
