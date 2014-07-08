@@ -10,3 +10,5 @@
 *.bbl
 
 *.gz
+
+.DS_Store
