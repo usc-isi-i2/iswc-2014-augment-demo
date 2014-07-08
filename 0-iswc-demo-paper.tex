@@ -7,7 +7,7 @@
 \usepackage{color}
 \usepackage{xspace}
 
-\newcommand{\comment}[1]{\marginpar{\footnotesize\textcolor{red}{#1}}}
+\newcommand{\comment}[1]{\marginpar{\scriptsize\textcolor{red}{#1}}}
 %\definecolor{Orange}{rgb}{1,0.5,0}
 \newcommand{\todo}[1]{\textbf{\textcolor{red}{[[#1]]}}}
 
@@ -49,19 +49,20 @@ Information Sciences Institute and Department of Computer Science, USA\\
 
 \begin{abstract}
 %  1. The problem
-
+The Linked Data cloud is an enormous repository of data, but it is difficult for users to find relevant data and to integrate this data into their own datasets. 
 %  2. Why the problem is a problem (why it's an interesting problem [SPJ])
 
 %  3. Startling sentence (what your solution achieves [SPJ])
 
 %  4. Implication of startling sentence (what follows from your solution [SPJ])
 
-
+\comment{%
 As users across the world transform legacy datasets in the form of relational databases and structured documents into RDF for the Linked Data Cloud, it can be difficult for them to understand how the data from one source relates to others'.
 Lacking such an understanding precludes users from making the most of the relationships they are capturing. 
 By building on our previously demonstrated ability to enable museum curators to semantically model their data about cultural artifacts, subjects and creators to generate RDF, we can exploit such models to allow curators to reason about how other models might integrate with their data.  
 Curators can then decide how to augment their data with linked data derived from other museums' sources.
 This enables users to not just quickly interrogate their linked data interactively but also develop data flows that can embed linked data from many sources in a larger pipeline. In this demonstration, we show how a curator can quickly model artist data from a new museum using a common cultural heritage ontology, discover biographical data published as RDF from another museum using the same modelling process, and then augment the new museum's artist records with it.  
+}
 \end{abstract}
 
 \subsubsection*{Introduction} 
