@@ -14,6 +14,8 @@
 \newcommand{\karma}{\textsc{Karma}\xspace}
 \newcommand{\eg}{e.g.,\xspace}
 \newcommand{\ie}{i.e.,\xspace}
+\newcommand{\rtworml}{\textsc{r2rml}\xspace}
+\newcommand{\sparql}{SPARQL\xspace}
 
 \urldef{\mailsa}\path|{knoblock, pszekely, slepicka}@isi.edu|
 \urldef{\mailsb}\path|{chengyey}@usc.edu|    
@@ -55,19 +57,20 @@ The Linked Data cloud is an enormous repository of data, but it is difficult for
 %  2. Why the problem is a problem (why it's an interesting problem [SPJ])
 Datasets in the Link Data cloud are represented using ontologies, but lack accurate descriptions of the data they contain.
 %  3. Startling sentence (what your solution achieves [SPJ])
-We present an approach that leverages R2RML mappings to describe the contents of datasets and that uses these mappings to find relevant data, and to integrate it with a user's own datasets.
+We present an approach that leverages \rtworml mappings to describe the contents of datasets and that uses these mappings to find relevant data, and to integrate it with a user's own datasets.
 %  4. Implication of startling sentence (what follows from your solution [SPJ])
-Our demonstration shows how users can easily create R2RML mappings for their datasets and then use these mappings to augment their datasets with data from the Linked Data cloud.
+Our demonstration shows how users can easily create \rtworml mappings for their datasets and then use these mappings to augment their datasets with data from the Linked Data cloud.
 \end{abstract}
 
-\subsubsection*{Introduction} 
+\section{Introduction} 
 \input{1-introduction}
 
-\subsubsection*{Datasets}
+\section{Datasets}
 \input{2-dataset}
 
-\subsubsection*{Model Management} 
-\input{3-model-manager}
+\section{Demonstration}
+
+We will show how a user can interactively develop a source model for this new dataset, discover what the Smithsonian has generated in relation to the user's new source model, and then integrate the Smithsonian's data into their own.  
 
 \subsubsection*{Modeling a New Source} 
 \input{4-simple-model}
