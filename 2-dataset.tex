@@ -1,1 +1,7 @@
-Dataset
+One museum who has used Karma for both modeling their data and generating RDF is the Smithsonian American Art Museum \cite{Szekely:2013vq}. 
+The model process for their source data required mapping 14 tables and views from their content management system which was backed by a relational database.
+For the mapping, the Smithsonian relied on the CIDOC CRM ontology \cite{Doerr:2003:CCR:958671.958678}.
+
+For this demonstration, we will use a CSV file containing approximately 200 artists extracted from 2500 records of artworks held at another museum.
+We will show how a user can interactively develop a source model for this new dataset, discover what the Smithsonian has generated in relation to the user's new source model, and then integrate the Smithsonian's data into their own.  
+To facilitate the discovery and integration, we have also generated a set of owl:sameAs links between the artists in the new dataset and the artists from the Smithsonian dataset using LIMES \cite{ngomo2011limes}.

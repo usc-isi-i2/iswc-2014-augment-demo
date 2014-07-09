@@ -3,14 +3,14 @@ To create a new source model for the ACMAA dataset in Karma, we first need to mo
 We do this by providing a few lines of Python to define a URI template using other fields to create a new field containing a URI for each artist.  We then model the artist by adding an E21\_Person to the source model.  
 This creates a new node labelled E21\_Person1 and we set the URI of the node to the new field.  
 We also create a E41\_Appelation with a rdfs:label to capture the artist's name.  
-To supplement our new source model which is illustrated in Figure~\ref{fig:simple-model-screenshot} and faciliate the augmentation, we have also generated a set of owl:sameAs links between the ACMAA dataset and the data from the Smithsonian using LIMES and loaded the links into a triples store.  
+The new source model is illustrated in Figure~\ref{fig:simple-model-screenshot}. 
 
 
 \begin{figure*}
 \begin{center}
 \includegraphics[width=4.8in]{images/4-simple-model.png}
 \vspace{-3mm}
-\caption{A simple model for describing an artist as an E21\_Person in the ACMAA dataset}
+\caption{A simple model for describing an artist as an E21\_Person}
 \vspace{-2mm}
 \label{fig:simple-model-screenshot}
 \end{center}
