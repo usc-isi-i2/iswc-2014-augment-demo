@@ -1,23 +1,15 @@
-For the sake of this demonstration, we have created a subset of the original data provided by the Amon Carter Museum of American Art that describes the artists behind the works the museum curates.  
-To create a new source model for the ACMAA dataset in Karma, we first need to model the primary entity in the dataset, the artist.  To make the RDF for the dataset linkable, we need to create URIs for the artists.  
-We do this by providing a few lines of Python to define a URI template using other fields to create a new field containing a URI for each artist.  We then model the artist by adding an E21\_Person to the source model.  
-This creates a new node labelled E21\_Person1 and we set the URI of the node to the new field.  
-We also create a E41\_Appelation with a rdfs:label to capture the artist's name.  
-The new source model is illustrated in Figure~\ref{fig:simple-model-screenshot}. 
+We begin by using Karma's existing capability to create a source model, illustrated in Figure~\ref{fig:simple-model-screenshot}, using the CIDOC CRM ontology for the first CSV file.  
+Karma can then translate this model into an R2RML mapping.
+From this R2RML mapping, Karma can then compare it to the other mappings loaded in the Model Manager to discover new ways to integrate data.
 
 
 \begin{figure*}
 \begin{center}
 \includegraphics[width=4.8in]{images/4-simple-model.png}
 \vspace{-3mm}
-\caption{A simple model for describing an artist as an E21\_Person}
+\caption{A Karma user has created an R2RML mapping for a CSV file of a museum's artists' biographical records and attempts to discover new data to augment the records}
 \vspace{-2mm}
 \label{fig:simple-model-screenshot}
 \end{center}
 \vspace{-1.5em}
 \end{figure*}
-
-
-
-
-To facilitate the discovery and integration, we have also generated a set of owl:sameAs links between the artists in the new dataset and the artists from the Smithsonian dataset using LIMES \cite{ngomo2011limes}.
