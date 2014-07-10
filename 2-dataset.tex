@@ -1,16 +1,12 @@
 \begin{enumerate}
 \item CSV file from a museum, containing 197 artists. %containing 2433 records of artworks by 
-
 \item Linked Data created from the Smithsonian American Art Museum (SAAM) content management system including over 40,000 artworks and 8,000 artists. 
 The Linked Data is accessible on a \sparql endpoint.
 In previous work~\cite{Szekely:2013vq} ~\todo{cite saam-lod github} we mapped the SAAM dataset to the CIDOC CRM ontology~\cite{Doerr:2003:CCR:958671.958678}, producing a collection of \rtworml mapping files for 14 tables in the SAAM collection management system.
 In the demonstration, we are using the SAAM LOD as a proxy for the Linked Data cloud to illustrate the vision of a Linked Data cloud populated with \rtworml models.
-
-\item \rtworml repository containing \rtworml mappings downloaded from the Web and stored in a triple store accessible on a \sparql endpoint (separate from the Linked Data endpoint).
-\karma provides a model manager component to manage the \rtworml repository (Fig~\ref{fig:model-manager-screenshot}).
-
+\item \rtworml repository containing \rtworml mappings from the Web and made accessible by a \sparql endpoint (separate from the Linked Data endpoint).
+\karma provides a component to manage the \rtworml repository (Fig~\ref{fig:model-manager-screenshot}).
 \item owl:sameAs links between the artists in the first dataset and the artists from the Smithsonian dataset generated using LIMES \cite{ngomo2011limes}.
-
 \end{enumerate}
 \begin{figure*}[bth]
 \begin{center}
