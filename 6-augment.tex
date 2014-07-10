@@ -1,4 +1,5 @@
-Karma takes the user's selected properties, e.g. the artist's biography (for completeness) and birth (for validation), and searches for matching triples.
+Karma takes the user's selected properties, e.g. the artist's biography (for completeness) and birth (for validation), and searches a SPARQL endpoint for matching triples.
+To facilitate the integration, owl:sameAs links between the datasets' artists were generated using LIMES \cite{ngomo2011limes}.
 Karma then merges the results and updates the source model appropriately as illustrated in Figure~\ref{fig:augment-screenshot}, so the user can continue to explore the integrated data interactively. 
 
 \begin{figure*}
