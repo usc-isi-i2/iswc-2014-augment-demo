@@ -6,6 +6,7 @@
 \usepackage{url}
 \usepackage{color}
 \usepackage{xspace}
+\usepackage{float}
 
 \newcommand{\comment}[1]{\marginpar{\scriptsize\textcolor{red}{#1}}}
 %\definecolor{Orange}{rgb}{1,0.5,0}
@@ -23,15 +24,11 @@
 \noindent\keywordname\enspace\ignorespaces#1}
 
 \begin{document}
-
 \mainmatter  % start of an individual contribution
-
 % first the title is needed
 \title{A Demonstration of Linked Data Source Discovery and Integration}
-
 % a short form should be given in case it is too long for the running head
 \titlerunning{A Demonstration of Linked Data Discovery and Integration}
-
 % the name(s) of the author(s) follow(s) next
 %
 \author{Jason Slepicka%
@@ -39,49 +36,40 @@
 %
 \authorrunning{Slepicka et al.}
 % (feature abused for this document to repeat the title also on left hand pages)
-
 % the affiliations are given next; don't give your e-mail address
 % unless you accept that it will be published
 \institute{University of Southern California\\ 
 Information Sciences Institute and Department of Computer Science, USA\\
 \mailsa\\
-\mailsb\\
-\url{http://www.isi.edu}}
-
+\mailsb\\}
 \maketitle
-
-
 \begin{abstract}
 %  1. The problem
 The Linked Data cloud is an enormous repository of data, but it is difficult for users to find relevant data and to integrate this data into their own datasets. 
 %  2. Why the problem is a problem (why it's an interesting problem [SPJ])
 Datasets in the Link Data cloud are represented using ontologies, but lack accurate descriptions of the data they contain.
 %  3. Startling sentence (what your solution achieves [SPJ])
-We present an approach that leverages \rtworml mappings to describe the contents of datasets and that uses these mappings to find relevant data, and to integrate it with a user's own datasets.
+We present an approach that leverages \rtworml mappings to describe the contents of datasets in order to find relevant data and integrate it with a user's own datasets.
 %  4. Implication of startling sentence (what follows from your solution [SPJ])
 Our demonstration shows how users can easily create \rtworml mappings for their datasets and then use these mappings to augment their datasets with data from the Linked Data cloud.
 \end{abstract}
 
 \section{Introduction} 
 \input{1-introduction}
-
 \section{Datasets}
 \input{2-dataset}
-
 \section{Demonstration}
+We will show how a user can interactively develop a source model for this new dataset, discover what the Smithsonian has published in relation to the user's new source model, and then integrate the Smithsonian's data into their own.  
 
-We will show how a user can interactively develop a source model for this new dataset, discover what the Smithsonian has generated in relation to the user's new source model, and then integrate the Smithsonian's data into their own.  
-
-\subsubsection{Step 1: Modeling a New Source} 
+\textbf{Step 1: Modeling a New Source} 
 \input{4-simple-model}
 
-\subsubsection{Step 2: Discovering Data Sources} 
+\textbf{Step 2: Discovering Data Sources} 
 \input{5-search}
 
-\subsubsection{Step 3: Integrating Data Sources} 
+\textbf{Step 3: Integrating Data Sources} 
 \input{6-augment}
-
+\vspace{-5mm}
 \bibliographystyle{plain}
 \bibliography{refs}
-
 \end{document}
