@@ -5,12 +5,11 @@ From these mappings, Karma generates a candidate set of linked data sources to i
 To aid the user, Karma also estimates how many of the user's artists are likely to have these properties in the linked data source.  
 Karma does this by testing the artists' URIs against Bloom filters that it created when generating RDF triples and then associated with the Predicate Object Maps of an R2RML mapping.  
 Karma's estimation helps the user avoid an expensive and unfruitful join very cheaply since the Bloom filters trade a small false positive rate for a much smaller data structure than a perfect hash, all while supporting arbitrary set operations.  
-\begin{figure*}
+\begin{figure*}[t]
 \centering
 \includegraphics[width=4.9in]{images/5-search.png}
 \vspace{-5mm}
 \caption{A Karma user selects CIDOC CRM object and data properties discovered from other sources to augment crm:E21\_Person}
 \vspace{-21pt}
 \label{fig:search-screenshot}
-\vspace{-1.5em}
 \end{figure*}
