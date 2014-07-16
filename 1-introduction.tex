@@ -2,13 +2,13 @@
 The Linked Data cloud contains an enormous amount of data about many topics.
 Consider museums, which often have detailed data about their artworks but may only have sparse data about the artists who created them.
 Museums typically have tombstone data about artists (name, birth/death years, and places) but may lack biographies, influences, etc.
-In this example, we would like to enable museums to find additional information about their artists in the Linked Data cloud and integrate it with their own to produce a richer, more complete dataset.
+Museums could use additional information about their artists in the Linked Data cloud and integrate it with their own to produce a richer, more complete dataset.
 
-Our approach, implemented as a new capability in our \karma data integration system~\cite{knoblock12:eswc} leverages \rtworml mappings~\cite{Sundara:12:RRR} to describe the contents of a user's datasets and the contents of datasets in the Linked Data cloud.
-We envision a world where datasets in the Linked Data cloud include richer descriptions of their content than what is available today.
-Today, datasets include, at best, a VoID description\footnote{\url{http://www.w3.org/TR/void/}} that expresses basic metadata, such as access method, URI patterns and vocabularies used.
-We propose augmenting this metadata with \rtworml mappings, which contain significantly richer descriptions about each subject and its properties.
-Even though the \rtworml standard was defined to specify mappings from relational databases to RDF, recent work~\cite{conf/semweb/DimouSCMW13} has proposed extensions to specify mappings from other types of data, including CSV, JSON, XML and Web APIs.
-Consequently, it is reasonable to expect that many more datasets in the Linked Data cloud could be published with \rtworml-style descriptions.
+Our approach to this use case, built into our \karma data integration system~\cite{Szekely:2013vq}, leverages \rtworml mappings~\cite{Sundara:12:RRR} to describe user's datasets and datasets in the Linked Data cloud.
+We envision a world where such datasets include richer descriptions than what is available today.
+Today, datasets include, at best, a VoID description\cite{Alexander:11:DLD} with basic metadata, such as access method and vocabularies used.
+We propose adding \rtworml mappings, which contain significantly richer descriptions about each subject and its properties.
+Even though \rtworml was defined to specify mappings from relational databases to RDF, recent work~\cite{conf/semweb/DimouSCMW13} has proposed extensions to handle other types of data, including CSV, JSON, XML and Web APIs.
+Consequently, it is reasonable to expect that more datasets in the Linked Data cloud could be published with \rtworml-style descriptions.
 
-In this demonstration we show how museum users can use \karma to quickly define an \rtworml mapping of a dataset (our previous work), how they can use the \rtworml mapping to find additional information about the artists in their dataset, and how they can very simply augment their dataset with the additional information (our new work).
+In this demonstration we show how museum users can use \karma to quickly define an \rtworml mapping of a dataset (our previous work), how they can use the \rtworml mapping to find more information about the artists in their dataset, and how they can augment their dataset with the additional information.

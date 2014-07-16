@@ -1,7 +1,7 @@
-We see comparisons between this approach and those used in relational database integration and semantic service composition.  
-In ORCHESTRA\cite{ives2008orchestra}, much care is taken to align tables to a schema graph.  
-For integration, heuristics are then applied to translate keyword searches over the graph into join paths using its Q query system, but these joins are not guaranteed to be semantically meaningful, as also demonstrated in our collaboration, CopyCat.  
-By using the R2RML mappings, Karma can propose integration paths with inherent meaning.  
+We see similarities in our approach with those used in relational database integration and semantic service composition.  
+ORCHESTRA\cite{ives2008orchestra} starts, like R2RML, by aligning database tables to a schema graph.  
+For integration, heuristics are used to translate keyword searches over the graph into join paths by its Q query system. 
+However, these joins are not guaranteed to be semantically meaningful, unlike the integration paths Karma finds using R2RML.
 
-Meanwhile, platforms like iServe\cite{pedrinaci2010iserve} aim to capture Linked Services and make them discoverable and queryable by annotating them with their Minimal Service Model using one of two editors.
-We have also repurposed R2RML as a way of capturing service descriptions in Karma as well\cite{taheriyan12:lapis}, which means we enable our users to also compose such services with other data sources like JSON, XML, and relational databases. 
+Meanwhile, platforms like iServe\cite{pedrinaci2010iserve} aim to capture Linked Services and make them discoverable and queryable by annotating them with their Minimal Service Model using an editor.
+We have also repurposed R2RML to capture service descriptions in Karma\cite{taheriyan12:lapis}, which means we can also enable our users to compose such services with other data sources like JSON, XML, and DBs. 

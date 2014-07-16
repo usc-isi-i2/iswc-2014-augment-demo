@@ -1,12 +1,12 @@
-The user selects the artist's biography (for completeness) and birth (for validation). Karma then automatically constructs SPARQL queries for the data.
-To facilitate the integration for this demo, we generated owl:sameAs links between the datasets' artists using LIMES \cite{ngomo2011limes}.  
-In future work we will supporting the linking process in Karma.
-Karma then merges the results and updates the source model appropriately as illustrated in Figure~\ref{fig:augment-screenshot}, so the user can continue to explore the integrated data interactively. 
+The user selects the artist's biography (for completeness) and birth (for validation). Karma automatically constructs SPARQL queries for the data.
+To facilitate integration, we generated owl:sameAs links between the artists using LIMES \cite{ngomo2011limes}.  
+We plan to support the linking in Karma.
+Karma then merges the results and updates the mapping shown in Figure~\ref{fig:augment-screenshot}, so the user can continue to explore the integrated data interactively. 
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=4.9in]{images/6-augment.png}
 \vspace{-5mm}
 \caption{A Karma user has integrated biographical data from the Smithsonian as new columns in their dataset. The columns contain artists' biographies and birth dates.}
-\vspace{-21pt}
+\vspace{-15pt}
 \label{fig:augment-screenshot}
 \end{figure*}
