@@ -1,8 +1,6 @@
-The user selects the artist's biography (for completeness) and birth (for validation). Karma automatically constructs SPARQL queries for the data.
-To facilitate integration, we generated owl:sameAs links between the artists using LIMES \cite{ngomo2011limes}.  
-We plan to support the linking in Karma.
-Karma then merges the results and updates the mapping shown in Figure~\ref{fig:augment-screenshot}, so the user can continue to explore the integrated data interactively. 
-\begin{figure*}[bt]
+The user selects the artist's biography (for completeness) and birth (for validation). \karma automatically constructs SPARQL queries to retrieve the data, integrates it into the worksheet, and augments the \rtworml mapping accordingly (Figure~\ref{fig:augment-screenshot}). 
+To support the integrated SPARQL queries, we generated owl:sameAs links between the artists in the CSV file and the Smithsonian dataset using LIMES \cite{ngomo2011limes} (we plan to integrate LIMES with \karma to enable users to perform all integration steps within \karma). 
+\begin{figure*}[htb]
 \centering
 \includegraphics[width=4.9in]{images/6-augment.png}
 \vspace{-5mm}

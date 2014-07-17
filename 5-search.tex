@@ -1,7 +1,6 @@
-The user then clicks on the E21\_Person1 in the R2RML mapping and selects Augment Data to discover new data to integrate into artist records.  
-Karma then parses R2RML mappings in its repository that describe crm:E21\_Person.
-From these mappings, Karma generates a candidate set of linked data sources to integrate, identifies meaningful object and data properties, and presents this to the user as illustrated in Figure~\ref{fig:search-screenshot}.
-To help the users select which properties to integrate, Karma uses Bloom filters to estimate the number of artists that have each of the properties listed in Figure~\ref{fig:search-screenshot}.
+The user then clicks on  E21\_Person1 in the \rtworml mapping and selects Augment Data to discover new data to integrate into artist records.  
+\karma retrieves \rtworml mappings in its repository that describe crm:E21\_Person, and uses these mappings to generate a candidate set of linked data sources to integrate, identifies meaningful object and data properties, and presents them to the user as illustrated in Figure~\ref{fig:search-screenshot}.
+To help the users select properties to integrate, Karma uses Bloom filters to estimate the number of artists that have each of the properties listed in Figure~\ref{fig:search-screenshot}.
 \begin{figure*}[t]
 \centering
 \includegraphics[width=4.9in]{images/5-search.png}
