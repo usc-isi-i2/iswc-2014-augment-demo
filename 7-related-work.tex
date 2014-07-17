@@ -3,5 +3,4 @@ ORCHESTRA\cite{ives2008orchestra} starts, like \rtworml, by aligning database ta
 For integration, heuristics are used to translate keyword searches over the graph into join paths using its Q query system. 
 However, these joins are not guaranteed to be semantically meaningful, unlike the integration paths \karma finds using \rtworml.
 
-Platforms such as iServe\cite{pedrinaci2010iserve} aim to capture Linked Services and make them discoverable and queryable by annotating them with their Minimal Service Model using an editor.
-We have also repurposed \rtworml to capture service descriptions in Karma\cite{taheriyan12:lapis}, which means we can also enable our users to compose such services with other data sources. 
+Platforms such as iServe\cite{pedrinaci2010iserve} capture Linked Services and make them discoverable and queryable by annotating them with their Minimal Service Model.  However, the past work on service discovery and composition only uses a semantic model of the inputs and outputs of the services.  In contrast, \karma service descriptions~\cite{taheriyan12:lapis} also capture the relationship between the attributes, which allows us to automatically discover semantically meaningful joins. 
